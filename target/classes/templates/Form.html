@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="/src/main/resources/static/styles.css">
+</head>
+<body>
+    <section class="fale-conosco">
+        <form class="form" id="leadForm">
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <input type="tel" name="phone" pattern="^\+?[0-9\s\-]+$" placeholder="Telefone" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="mensagem" placeholder="Digite sua mensagem" maxlength="500" required></textarea>
+            <button type="submit" onclick="validar()">Enviar</button>
+        </form>
+
+        <script src="/src/main/resources/static/scripts.js"></script>
+    </section>
